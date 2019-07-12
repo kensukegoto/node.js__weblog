@@ -9,15 +9,7 @@ gulp.task("copy-javascripts.clean",() => {
 
 gulp.task("copy-javascripts.babel",() => {
   return gulp.src("./javascripts/**/*", { cwd: config.path.input })
-    .pipe(babel({
-      presets: [
-        ["@babel/env", {
-          "targets": [">0.25% in JP", "not ie <= 10", "not op_mini all"],
-          "useBuiltIns": "usage",
-          "corejs": 3
-        }]
-      ]
-    }))
+    .pipe(babel())
     .pipe(gulp.dest("./javascripts",{ cwd: config.path.input }));
 });
 
