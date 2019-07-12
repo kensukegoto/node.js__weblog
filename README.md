@@ -12,3 +12,8 @@ launch.jsonにて、デバッグ実行時のオプションとして`NODE_ENV`�
 - .eslintrc.jsが作成されるので追加編集
 - ルール一覧<br>
 https://garafu.blogspot.com/2017/02/eslint-rules-jp.html
+
+# gulp + babel
+
+- gulpのタスク内にjsのオブジェクトとしてbabelの設定を渡す方法
+- babel.config.jsにbabelの設定を記述する方法
